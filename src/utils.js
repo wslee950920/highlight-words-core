@@ -50,8 +50,6 @@ export const combineChunks = ({
   chunks = chunks
     .sort((first, second) => first.start - second.start)
     .reduce((processedChunks, nextChunk) => {
-      console.log("combine", processedChunks, nextChunk);
-
       // First chunk just goes straight in the array...
       if (processedChunks.length === 0) {
         return [nextChunk];
