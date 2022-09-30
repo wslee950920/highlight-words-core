@@ -133,10 +133,11 @@ module.exports =
 	  var chunks = _ref2.chunks;
 	
 	  chunks = chunks.sort(function (first, second) {
+	    console.log("first", first);
+	    console.log("second", second);
+	
 	    return first.start - second.start;
 	  }).reduce(function (processedChunks, nextChunk) {
-	    console.log("combine");
-	
 	    // First chunk just goes straight in the array...
 	    if (processedChunks.length === 0) {
 	      return [nextChunk];
