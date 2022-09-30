@@ -4,7 +4,7 @@
   "version": "1.2.2",
   "author": "Brian Vaughn <brian.david.vaughn@gmail.com>",
   "license": "MIT",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
     "build": "yarn build:source && yarn build:flow",
     "build:flow": "cp flow-template dist/index.js.flow",
